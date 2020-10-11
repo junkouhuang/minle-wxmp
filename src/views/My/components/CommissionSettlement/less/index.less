@@ -1,0 +1,242 @@
+.CommissionSettlement {
+
+  .qb_img {
+    margin: 10px;
+    height: 190px;
+    background-color: #ff5555;
+    background-image: url("../images/bj.png");
+    margin-top: 1.4336rem;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    background-size: cover;
+
+    .d1 {
+      font-size: 14px;
+      padding-top: 40px;
+    }
+
+    .d2 {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 2px;
+      font-size: 25px;
+
+      span {
+        font-size: 18px;
+        margin: 0 4px;
+      }
+    }
+
+    .d3 {
+      padding-top: 35px;
+      font-size: 14px;
+    }
+
+    .d5 {
+      margin-top: 10px;
+    }
+
+    .d6 {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .m_bar {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ffffff;
+    z-index: 1;
+
+    .m_bar_left {
+      width: 27%;
+      float: left;
+      text-align: center;
+
+      span {
+        color: #333333;
+        font-size: 14px;
+      }
+    }
+    .m_bar_center {
+      width: 37%;
+      float: left;
+      text-align: center;
+
+      span {
+        color: #333333;
+        font-size: 14px;
+      }
+    }
+    .m_bar_right {
+      width: 36%;
+      float: right;
+      text-align: center;
+
+      span {
+        color: #333333;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .m_list {
+    margin-top: 10px;
+
+    .qb_row {
+      background-color: #ffffff;
+      position: relative;
+      padding: 20px 0;
+
+      .qb_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 36px;
+        }
+      }
+
+      .username {
+        color: #333333;
+        font-size: 16px;
+        margin: 0 auto 15px;
+      }
+
+      .type {
+        color: #333333;
+        font-size: 14px;
+        margin: 0 auto 15px;
+      }
+
+      .createTime {
+        color: #858585FF;
+        font-size: 13px;
+      }
+
+      .qb_right {
+        text-align: center;
+
+        .amount {
+          color: #FF4141;
+          font-size: 17px;
+          margin: 0 16px 0.4rem 0;
+          text-align: right;
+        }
+
+        .amount1 {
+          color: #cccccc;
+          font-size: 14px;
+          margin: 0 16px 0.4rem 0;
+          text-align: right;
+        }
+
+        .serviceFee {
+          color: #cccccc;
+          font-size: 14px;
+          margin: 0 16px 0 0;
+          text-align: right;
+        }
+
+        .hs {
+          color: #EE521D;
+        }
+
+        .dj {
+          font-size: 13px;
+          color: #858585FF;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 90%;
+        margin-left: 5%;
+        height: 1px;
+        position: relative;
+        background-color: #F0F0F0FF;
+        bottom: -20px;
+      }
+    }
+
+    .empty {
+      text-align: center;
+      margin-top: 50px;
+
+      img {
+        width: 200px;
+      }
+
+      p {
+        margin:28px auto 37px;
+        color: #615F60FF;
+        font-size: 14px;
+      }
+
+      div{
+        margin: auto;
+        width: 109px;
+        height: 30px;
+        line-height: 30px;
+        color: #ffffff;
+        background: -webkit-linear-gradient(right, #ec1212, #ff5040);
+        background: linear-gradient(270deg, #ec1212, #ff5040);
+        border-radius: 0.8rem;
+        font-size: 14px;
+        box-shadow: 0 0.106667rem 0.16rem 0 rgba(255, 85, 85, 0.3);
+        border: 0.026667rem solid #FF5555;
+        margin-top: 0.72rem;
+
+        a {
+          color: #ffffff;
+        }
+
+      }
+    }
+
+    .miliList {
+      background-color: #FAF8F9;
+      text-align: center;
+
+      p {
+        font-size: 16px;
+        padding: 16px 0;
+      }
+
+      hr {
+        background-color: #F2F2F2;
+        border: none;
+        height: 1px;
+      }
+
+      .m_content {
+        padding: 30px 10px;
+
+        .col_m {
+          div {
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+            font-size: 14px;
+            margin: 5px;
+            color: #666666;
+            border:none;
+            border-radius: 30px;
+          }
+
+          .m_active {
+            color: #ff5555;
+            background-color: rgba(255,85,85,.1);
+            border:none;
+          }
+        }
+      }
+    }
+  }
+}

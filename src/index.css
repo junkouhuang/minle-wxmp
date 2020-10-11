@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+  list-style: none;
+
+background: transparent;
+}
+html {
+  font-family:Microsoft YaHei;
+}
+body {
+line-height: 1;
+background: #F4F4F5;
+
+}
+input{
+  -webkit-appearance: none;
+  }
+ol, ul,li {
+list-style: none;
+}
+a {
+  text-decoration:none;
+  cursor: pointer;
+  color: #333333;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before,blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+/* remember to define focus styles! */
+:focus {
+outline: 0;}
+/* remember to highlight inserts somehow! */
+ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* 副标题 */
+.Subheading{
+font-weight: 700;
+font-size: 16px;
+color: #999;
+margin-left: 10px;
+}
+/* 主标题 */
+.MainTitle{
+    font-weight: 700;
+    font-size: 28px;
+}
+/* 清除浮动 */
+.clear:after {
+    content: "";
+    clear: left;
+    display: block;
+}
+
+
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  -webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+	overflow-y: scroll;
+}
+.btns{
+  margin-top: 1.866667rem;
+  /* width: 4.48rem; */
+  background: linear-gradient(270deg,#FF5555,#FF5555);
+  box-shadow: 0 0.106667rem 0.16rem 0 rgba(27, 191, 128, 0.3);
+  border-radius: 1.066667rem;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: .373333rem;
+  padding-right: .373333rem;
+  box-sizing: border-box;
+  font-size: .48rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.33333333;
+  /* // border-radius: .133333rem; */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  overflow: hidden;
+}
+.van-switch--on{
+  border-color: #ff5555;
+  background-color: #ff5555;
+}
+.van-radio__icon--checked .van-icon{
+  border-color: #FF5555;
+  background-color: #FF5555;
+}
+.file /deep/ .van-uploader__input-wrapper{
+  width: 100%;
+}
+
+.add-cart-item{
+  position: fixed;
+  -webkit-transform: scale(0.8) rotate(0);
+  -ms-transform: scale(0.8) rotate(0);
+  -o-transform: scale(0.8) rotate(0);
+  transform: scale(0.8) rotate(0);
+  opacity: 0.9;
+  -webkit-transition: all 0.7s cubic-bezier(0.58,-1.15, 0.99, 1.07);
+  -o-transition: all 0.7s cubic-bezier(0.58,-1.15, 0.99, 1.07);
+  transition: all 0.7s cubic-bezier(0.58,-1.15, 0.99, 1.07);
+  /* border-radius: 50%; */
+  z-index: 99999999999;
+}

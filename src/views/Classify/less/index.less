@@ -1,0 +1,115 @@
+.classify {
+  .classify_top {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1.4rem;
+    background-color: #ffffff;
+    z-index: 999;
+
+    i {
+      color: #999999;
+      margin-left: .1rem;
+    }
+
+    .keyword {
+      width: 100vw;
+    }
+  }
+
+  .classify_content {
+    display: flex;
+    position: absolute;
+    //top: 54px;
+    //bottom: 50px;
+    top: 0px;
+    bottom: 0px;
+
+    .left {
+      width: 2.266667rem;
+      height: 100%;
+      overflow:scroll;
+      border: 0px;
+      .list {
+        height: 100%;
+        background-color: #fafafa;
+      }
+    }
+
+    .right {
+      flex: 1;
+      position: relative;
+      text-align: center;
+      width: calc(100vw - 86px);
+      //height: calc(100vh - 103px);
+      background-color: #fafafa;
+      overflow:auto;
+
+      .list {
+        background:rgba(255,255,255,1);
+        opacity:1;
+        border-radius:5px 0px 5px 0px;
+        margin:0 0px 10px 0;
+        &:last-child {
+          margin-bottom: 65px;
+        }
+      }
+
+      .typeName {
+        color: #333333;
+        font-size:13px;
+        text-align: left;
+        padding:0.266667rem ;
+        font-weight:bold;
+      }
+
+      .item {
+        padding: 10px;
+
+        .c_icon {
+          height: 2rem;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 2rem;
+          border-radius: 4px;
+        }
+
+        .title {
+          margin-top: .2rem;
+          height: 16px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
+          /* white-space: nowrap; */
+          line-height: 16px;
+          color: #333333;
+          font-size:11px;
+        }
+      }
+
+      .content {
+        img {
+          width: 105px;
+          margin-top: 4rem;
+        }
+        p {
+          margin: 0.746667rem auto 0.986667rem;
+          color: #615F60FF;
+          font-size: 0.373333rem;
+        }
+      }
+    }
+  }
+}
+
+.van-sidebar-item--select {
+    color: #323233;
+    font-weight: 600;
+    font-size:15px;
+    border-color: #FF5555;
+    background-color: #fff;
+}

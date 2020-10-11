@@ -1,0 +1,80 @@
+.top {
+  position: absolute;
+  top: 0;
+  background: #f7f7f7;
+  text-align: center;
+  color: #000;
+  padding: 0;
+  height: 1.1736rem;
+  width: 100%;
+  line-height: 1.173333rem;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  z-index:99;
+
+  .arrow {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    left: 0.333333rem;
+
+    &::after {
+      //border-width: 0.053333rem 0 0 0.053333rem;
+      content: "";
+      //border: 0.026667rem solid #4d4f50;
+      border-width: 0.053333rem 0 0 0.053333rem;
+      position: absolute;
+      width: 0.32rem;
+      height: 0.32rem;
+      // border: 0.026667rem solid #ccc;
+      border: 0.026667rem solid #4d4f50;
+      //border-width: 0.065667rem 0 0 0.065667rem;
+      border-width: 0.043rem 0 0 0.043rem;
+      -webkit-transform: rotate(315deg);
+      transform: rotate(315deg);
+      top: 0.213333rem;
+      left: 0.186667rem;
+    }
+  }
+
+  .title {
+    text-align: center;
+    font-size: 0.426667rem;
+    color: #000;
+    line-height: 1.173333rem;
+    margin: 0 2.346667rem;
+    height: 1.066667rem;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .edior {
+    position: absolute;
+    right: 0.333333rem;
+    font-size: .4rem;
+    color: #999;
+    width: 100px;
+    text-align: right;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 0.426667rem;
+  color: #000;
+  line-height: 1.173333rem;
+  margin: 0 2.346667rem;
+  height: 1.066667rem;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.icon {
+
+}

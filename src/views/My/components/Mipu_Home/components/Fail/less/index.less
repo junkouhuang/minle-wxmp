@@ -1,0 +1,84 @@
+.mipu {
+  background-color: #f4f4f5;
+  .Failed {
+    margin-top: 55px;
+    .content {
+      border-radius:8px;
+      padding: 30px 19px;
+      background-color: #ffffff;
+      position: relative;
+      .top {
+        display: flex;
+        align-items: center;
+        img {
+          width: 50px;
+        }
+        .name_time {
+          margin-left: 8px;
+          .name {
+            color: #333333;
+            font-size: 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 184px;
+          }
+          .time {
+            color: #B3B3B3;
+            font-size: 12px;
+            margin-top: 6px;
+          }
+        }
+      }
+      .bottom {
+        margin-top: 25px;
+        .name {
+          color: #333333;
+          font-size: 14px;
+        }
+        .no {
+          color: #B3B3B3;
+          font-size: 12px;
+          margin-top: 6px;
+        }
+      }
+      .fail_icon {
+        width: 78px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+    }
+    .cause {
+      color: #333333;
+      font-size: 14px;
+      margin-top: 13px;
+      margin-left: 19px;
+      span {
+        color: #FF0000;
+      }
+    }
+    .cause_time {
+      color: #333333;
+      font-size: 12px;
+      margin-top: 6px;
+      margin-left: 19px;
+    }
+    .btn {
+      height: 47px;
+      line-height: 47px;
+      background: linear-gradient(270deg, #ec1212, #ff5040);
+      border-radius: 30px;
+      color: #fff;
+      font-size: .48rem;
+      box-shadow: 0 0.106667rem 0.16rem 0 rgba(255, 85, 85, 0.3);
+      border: 1px solid #FF5555;
+      position: absolute;
+      bottom: 25px;
+      left: 15px;
+      right: 15px;
+      width: calc(100vw - 30px);
+    }
+  }
+}
+

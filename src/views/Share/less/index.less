@@ -1,0 +1,153 @@
+.share {
+  background-color: #ffffff;
+  height:calc(100vh);
+  overflow-y: auto;
+
+  .tops {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url("../images/bj.png");
+    height: 135px;
+    background-size: 100% 100%;
+    z-index: 0;
+    margin-top: 40px;
+
+    .finger {
+      width: 30px;
+      top: 50px;
+      right: 10px;
+      position: absolute;
+    }
+
+    .click {
+      top: 90px;
+      right: 24px;
+      position: absolute;
+      line-height: 15px;
+      color: #ffffff;
+      font-size: 13px;
+      transform: rotate(45deg);
+    }
+
+    .topleft {
+      margin: 28px 28px;
+      background-color: #ffffff;
+
+      .left {
+        color: #868686;
+        font-size: 16px;
+        margin-top: 11px;
+        display: flex;
+
+        .more {
+          background-color: #868686;
+          width: 30px;
+          height: 20px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 4px;
+
+          img {
+            width: 15px;
+            height: 3px;
+            margin: auto;
+          }
+        }
+
+      }
+    }
+
+    .glass {
+      height: 48px;
+      margin: 28px 28px;
+    }
+  }
+
+  .bannerPicture {
+    width: 96%;
+    margin-left: 2%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: -36px;
+  }
+
+  .bottom {
+    display: flex;
+    padding: 26px 0;
+
+    .code {
+      width: 125px;
+      height: 125px;
+      margin-left: 6px;
+    }
+
+    .content {
+      margin-left: 10px;
+      margin-right: 25px;
+      position: relative;
+
+      .spmc {
+        font-size: 15px;
+        color: #333333;
+        line-height: 25px;
+      }
+
+      .price {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .jg {
+          color: #FF4141;
+        }
+
+        .by {
+          color: #868686;
+          font-size: 15px;
+        }
+
+        span {
+          font-size: 17px;
+
+          i {
+            font-style: normal;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .buy {
+        width: 106px;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+        color: #ffffff;
+        border-radius: 20px;
+        font-size: 16px;
+        background-image: linear-gradient(to right,#ff5040, #ec1212);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.top0 {
+  .tops {
+    margin-top: 0!important;
+    .finger {
+      top: 0.333333rem!important;
+      right: 20px!important;
+    }
+
+    .click {
+      top: 1.333333rem!important;
+      right: 34px!important;
+    }
+  }
+}

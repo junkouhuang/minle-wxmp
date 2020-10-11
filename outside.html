@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0"><meta http-equiv=X-UA-Compatible content="ie=edge"><link rel=icon href=favicon.ico type=image/x-icon><title>民乐荟商城</title><link href=./static/css/app.0ef00b3e2de8e537062ab875f7703f9e.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.7844a3622fa36dfc0521.js></script><script type=text/javascript src=./static/js/vendor.854a613c44ee5805c183.js></script><script type=text/javascript src=./static/js/app.8c742317332dc3c7c8b9.js></script></body><script>// 配置rem
+  onload= window.onresize=function(){
+
+     let width=screen.width;
+     //以苹果5s为标准
+     let rem=width/10;
+     document.querySelector('html').style.fontSize=rem+'px'
+ }</script>
+ <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+ <script>
+
+	
+	 if(window.location.search){
+
+	  let basecode = window.location.search.split("basecode=")[1].split("?")[0]
+	   sessionStorage.setItem('basecode',basecode)
+	  window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd2e08a066f9a7f0c&redirect_uri=https://minle.xinquanjk.com/minlewxmp/inside.html&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect"
+	 
+	 }
+	
+ 
+ </script>
+
+ </html>

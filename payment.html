@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta charset=UTF-8>
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0"><meta http-equiv=X-UA-Compatible content="ie=edge">
+<link rel=icon href=favicon.ico type=image/x-icon>
+<title>民乐荟商城</title>
+<link href=./static/css/app.8c223096cfc7e042ff0e2847a947c6a7.css rel=stylesheet>
+</head>
+<body>
+<div >
+
+</div>
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  function aj(code){
+    $.ajax({
+      url: "https://minle.xinquanjk.com/common/wxmp/minle/token?code="+code,
+      //dataType:'jsonp',
+      processData: false,
+      type:'get',
+      success:function(res){
+        //将openid缓存起来
+        sessionStorage.setItem('openid',JSON.parse(res.data).openid)
+        sessionStorage.setItem('access_token',JSON.parse(res.data).access_token)
+        window.location.href=sessionStorage.getItem('callbacks')
+      },
+      error:function(XMLHttpRequest, textStatus, errorThrown) {
+
+      }});
+  }
+</script>
+<script>
+  if(window.location.search){
+    let code = window.location.search.split("&")[0].split("=")[1]
+
+    aj(code);
+  }
+</script>
+
+
+</html>

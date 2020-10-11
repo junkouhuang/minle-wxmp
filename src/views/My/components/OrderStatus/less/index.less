@@ -1,0 +1,132 @@
+.content {
+  position: absolute;
+  top: 1.1736rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+  .info {
+    display: flex;
+    height: 89px;
+    padding: 0 12px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:8px;
+    margin-bottom: 10px;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 13px;
+    }
+    div {
+      flex: 1;
+      padding-top:10px;
+      color:#333333;
+      h4 {
+        font-size:14px;
+        line-height: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size:14px;
+      }
+    }
+  }
+  cite {
+    font-style: normal;
+    background-color: #fff;
+    display: block;
+    padding: 23px 17px;
+    position: relative;
+    border-radius:8px;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 30px;
+      top: 50px;
+      width: 2px;
+      background-color: #CDCDCD;
+      bottom: 90px;
+    }
+    h4 {
+      display: flex;
+      margin-bottom:30px;
+      img {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        margin-right: 9px;
+      }
+      p {
+        color: #333333;
+        font-weight: 400;
+        line-height:30px;
+        font-size:13px;
+      }
+    }
+    .info-all {
+      .info-list {
+        display: flex;
+        margin-top: 22px;
+        img {
+          width: 27px;
+          height: 27px;
+          border-radius: 50%;
+          margin-right: 9px;
+          z-index: 1;
+          position: relative;
+          top: -2px;
+        }
+        .info-right {
+          margin-left:5px;
+
+          h5 {
+            font-size:14px;
+            font-weight:600;
+            line-height:23px;
+            color:#333333;
+          }
+          .crp {
+            color:#333333;
+            font-weight:600;
+          }
+          .nocrp {
+            color: #808080;
+            width: 8.066667rem;
+          }
+          p,span {
+            color: #808080;
+            font-size:13px;
+            font-weight:400;
+            line-height:18px;
+          }
+          p {
+            margin: 15px 0 8px 0;
+          }
+          .time {
+            font-weight:600;
+            color:#333333;
+          }
+          .notime {
+            font-weight:520;
+            color: #808080;
+          }
+        }
+        .round {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius:50%;
+          border: 3px solid #C2C2C2;
+          margin:0 6px;
+          background-color: #C2C2C2;
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+  }
+}

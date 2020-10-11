@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>民乐荟商城</title>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script>
+   // 配置rem
+  onload= window.onresize=function(){
+
+     let width=screen.width;
+     //以苹果5s为标准
+     let rem=width/10;
+     document.querySelector('html').style.fontSize=rem+'px'
+
+    if(window.location.search == '?from=timeline'){
+      window.location.href=window.location.href.split("?from=timeline")[0]+window.location.href.split("?from=timeline")[1];
+    }
+ }
+</script>
+<script src="https://res2.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=88e89e1fca3bf26d148a186d9fbbf85a&plugin=AMap.ToolBar,AMap.IndoorMap"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+  var map = new AMap.Map('container', {
+    resizeEnable: true
+  });
+  AMap.plugin('AMap.Geolocation', function() {
+    var geolocation = new AMap.Geolocation({
+      enableHighAccuracy: true,//是否使用高精度定位，默认:true
+      timeout: 5000,          //超过10秒后停止定位，默认：5s
+      useNative:true
+    });
+    map.addControl(geolocation);
+    geolocation.getCurrentPosition(function(status,result){
+      if(status=='complete'){
+        onComplete(result)
+      }else{
+        onError(result)
+      }
+    });
+  });
+  //解析定位结果
+  function onComplete(data) {
+    console.log('定位结果：' + data.position);
+    //缓存经纬度
+    localStorage.setItem('longitude_latitude',data.position);
+    $.ajax({
+      type:"get",
+      url:"https://restapi.amap.com/v3/place/around?key=88e89e1fca3bf26d148a186d9fbbf85a&radius=10000&location="+data.position,
+      data:{},
+      dataType:"json",
+      success:function(data){
+        localStorage.setItem('area',JSON.stringify(data.pois))
+      }
+    })
+  }
+  //解析定位错误信息
+  function onError(data) {
+    console.log(data);
+    console.log("===")
+  }
+</script>
+</html>
